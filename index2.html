@@ -12,7 +12,7 @@
     <style>
         .con {
             background-color: white;
-            max-width: 60%;
+            max-width: 80%;
             min-height: 400px;
             margin-left: 10%;
             padding-top: 30px;
@@ -24,12 +24,20 @@
             margin-bottom: 0px;
 
         }
-        .con2{
+        .heading {
+                
+                font-family: Teko;
+               
+                font-weight: bold;
+            }
+
+
+        .con2 {
             background-color: #F7F9FC;
             padding-top: 20px;
             margin-left: 10%;
-            max-width: 60%;
-            
+            max-width: 80%;
+
         }
 
         .img {
@@ -45,7 +53,8 @@
             margin-top: 50px;
             margin-bottom: 50px;
         }
-        .span{
+
+        .span {
             font-weight: normal;
         }
 
@@ -57,19 +66,20 @@
             margin-bottom: 40px;
 
         }
-        #icon{
+
+        #icon {
             margin-left: 3%;
         }
-        #icon2{
-            
-        }
+
+        #icon2 {}
+
         #button2 {
             border-radius: 25px;
             max-width: 40%;
             height: 50px;
             margin-top: 10px;
             margin-bottom: 40px;
-            margin-left:5%;
+            margin-left: 5%;
 
         }
 
@@ -77,69 +87,195 @@
             /* background-color: rgb(237, 245, 248); */
             background-color: #F2F5F8;
         }
-        .underline{
-            
-            max-width:100%;
+
+        .underline {
+
+            max-width: 100%;
         }
-        .img2{
+
+        .img2 {
             margin-top: 40px;
             margin-left: 5%;
             margin-bottom: 20px;
         }
-        .paragraph2{
+
+        .paragraph2 {
             margin-left: 5%;
         }
-        .paragraph3{
+
+        .paragraph3 {
             margin-left: 5%;
         }
-        .container{
-            margin-left: 5%; 
-        }
-        .paragraph4{
+
+        .container {
             margin-left: 5%;
-            margin-top:30px;
         }
-       
+
+        .paragraph4 {
+            margin-left: 5%;
+            margin-top: 30px;
+        }
+
+        .inline {
+            font-weight: bold;
+
+        }
+
+        @media only screen and (max-width: 568px) {
+            .con {
+                background-color: white;
+                max-width: 80%;
+                min-height: 400px;
+                margin-left: 10%;
+                padding-top: 30px;
+                margin-top: 30px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                padding-left: 5%;
+                padding-bottom: 20px;
+                margin-bottom: 0px;
+
+            }
+
+            .heading {
+                font-size: 17px;
+                font-family: Teko;
+               
+                font-weight: bold;
+            }
+
+            .con2 {
+                background-color: #F7F9FC;
+                padding-top: 20px;
+                margin-left: 10%;
+                max-width: 80%;
+
+            }
+
+            .img {
+                margin-bottom: 30px;
+                font-weight: bold;
+                margin-top: 20px;
+
+            }
+
+            .paragraph {
+                font-weight: bold;
+                margin-left: 5%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .span {
+                font-weight: normal;
+            }
+
+            #button {
+                border-radius: 25px;
+                max-width: 40%;
+                height: 30px;
+                margin-top: 10px;
+                margin-bottom: 40px;
+                font-size: 12px;
+                justify-content: center;
+            }
+
+            #icon {
+                margin-left: 3%;
+            }
+
+            #icon2 {}
+
+            #button2 {
+                border-radius: 25px;
+                max-width: 60%;
+                height: 30px;
+                margin-top: 10px;
+                margin-bottom: 40px;
+                margin-left: 5%;
+                font-size: 12px;
+                justify-content: center;
+            }
+
+            body {
+                /* background-color: rgb(237, 245, 248); */
+                background-color: #F2F5F8;
+            }
+
+            .underline {
+
+                max-width: 100%;
+            }
+
+            .img2 {
+                margin-top: 40px;
+                margin-left: 5%;
+                margin-bottom: 20px;
+            }
+
+            .paragraph2 {
+                margin-left: 5%;
+            }
+
+            .paragraph3 {
+                margin-left: 5%;
+            }
+
+            .container {
+                margin-left: 5%;
+            }
+
+            .paragraph4 {
+                margin-left: 5%;
+                margin-top: 30px;
+            }
+
+            .inline {
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="con">
-        <h2>Web Design Contract Completed</h2>
+        <h2 class="heading">Web Design Contract Completed</h2>
 
 
         <p><img src="images/processed.jpeg" class="img"></p>
         <p>Hello Ben,</p>
         <p>This is to let you know that [name of document] has been <br> signed by all parties
-            involved. You can view the completed <br>document below and download the releaent files.</p>
-        <p>Web design Contract.</p>
+            involved. You can view the completed <br>document below and download the relevant files.</p>
+        <p class="inline">Web Design Contract.</p>
         <button type="button" class="btn btn-primary" id="button">View Document</button>
         <p>Regards,<br>
             UsefulPDF team</p>
     </div>
     <div class="con2">
         <p class="paragraph">Please do not share this email<br>
-            <span class="span"> The content of this email is confidential and it contains a secure link to<br>UsefulPDF. Please do not forward
+            <span class="span"> The content of this email is confidential and it contains a secure link to<br>UsefulPDF.
+                Please do not forward
                 it or share the link.</span>
-            </p>
-            <hr class="underline">
-            <img src="images/processed.jpeg" class="img2">
-            <p class="paragraph2">About UsefulPDF<br>
+        </p>
+        <hr class="underline">
+        <img src="images/processed.jpeg" class="img2">
+        <p class="paragraph2">About UsefulPDF<br>
             UsefulPDF is a document generation and electronic signature platform designed to <br>optimize your workflow,
-                slashing times, and give you time to focus on the things that <br>most.
-            </p>
-            <p class="paragraph3">Learn more here <a href="https://usefulpdf.com">https://usefulpdf.com</a></p>
-            <div class="container">
-            <i class="fa fa-twitter" aria-hidden="true" id="icon2" ></i>
-               <i class="fa fa-facebook-square" id="icon" ></i>
-               <i class="fa fa-linkedin-square" aria-hidden="true" id="icon" ></i>
-            </div>
-            
-            <p class="paragraph4">Signing processed by UsefulPDF on behalf of BubbleiHub</p>
-            <button type="button" class="btn btn-primary" id="button2">Contact document owner</button>
-        
+            slashing times, and give you time to focus on the things that <br>most.
+        </p>
+        <p class="paragraph3">Learn more here <a href="https://usefulpdf.com">https://usefulpdf.com</a></p>
+        <div class="container">
+            <i class="fa fa-twitter" aria-hidden="true" id="icon2"></i>
+            <i class="fa fa-facebook-square" id="icon"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true" id="icon"></i>
+        </div>
+
+        <p class="paragraph4">Signing processed by UsefulPDF on behalf of BubbleiHub</p>
+        <button type="button" class="btn btn-primary" id="button2">Contact document owner</button>
+
     </div>
-   
+
 
 
 
